@@ -1,179 +1,152 @@
 .invitation-container {
-    position: relative;
-    width: 100%;
-    max-width: 1015px;
-    aspect-ratio: 1015/1079;
-    margin: 0 auto;
-  }
-  
-  .background-image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .card {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0);
-    box-sizing: border-box;
-    overflow-y: auto;
-    border-radius: 1rem;
-    font-family: 'Luckiest Guy', cursive;
-    color: #2c3e50;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.1rem;
-  }
-  
+  position: relative;
+  width: 100%;
+  max-width: 1015px;
+  aspect-ratio: 1015/1079;
+  margin: 0 auto;
+}
+
+.background-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-radius: 1rem;
+  font-family: 'Luckiest Guy', cursive;
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+.half-red {
+  color: #ff0000; /* vivid red */
+}
+.half-yellow {
+  color: #ffff33; /* extra bright yellow */
+  -webkit-text-stroke: 0.5px #3498db;
+  text-stroke: 0.5px #3498db;
+  text-shadow: -0.5px -0.5px 0 #3498db,
+               0.5px -0.5px 0 #3498db,
+               -0.5px 0.5px 0 #3498db,
+               0.5px 0.5px 0 #3498db;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.confirmation-stats {
+  margin-top: 0.5rem;
+  background: rgba(255,255,255,0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.confirmation-stats p {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin: 0;
+  text-align: center;
+}
+
+.audio-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-blue {
+  background-color: #3498db;
+  color: white;
+}
+.btn-blue:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.btn-red {
+  background-color: #e74c3c;
+  color: white;
+}
+.btn-red:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.btn-yellow {
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+.btn-yellow:hover {
+  background-color: #f39c12;
+  transform: scale(1.05);
+}
+
+.btn-green {
+  background-color: #27ae60;
+  color: white;
+}
+.btn-green:hover {
+  background-color: #1e8449;
+  transform: scale(1.05);
+}
+
+.btn-blue-small {
+  background-color: #3498db;
+  color: white;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+}
+.btn-blue-small:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
   .title {
-    font-size: 2rem;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
-    margin: 0;
-    font-family: 'GillSansUltraBold', sans-serif;
-
+    font-size: 2.5rem;
   }
-  .half-red {
-    color: #ff0000; /* vivid red */
-  }
-  .half-yellow {
-    color: #ffff33; /* extra bright yellow */
-    -webkit-text-stroke: 0.5px #3498db;
-    text-stroke: 0.5px #3498db;
-    text-shadow: -0.5px -0.5px 0 #3498db,
-                 0.5px -0.5px 0 #3498db,
-                 -0.5px 0.5px 0 #3498db,
-                 0.5px 0.5px 0 #3498db;
-  }
-  
   .subtitle {
-    font-size: 1.25rem;
-    text-align: center;
-    margin: 0;
-    font-family: 'GillSansExtraBold', sans-serif;
-
+    font-size: 1.5rem;
   }
-  
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-  
-  .confirmation-stats {
-    margin-top: 0.5rem;
-    background: rgba(255,255,255,0.6);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-  }
-  .confirmation-stats p {
-    font-size: 1rem;
-    color: #2c3e50;
-    margin: 0;
-    text-align: center;
-  }
-  
-  .audio-controls {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-  
   .btn {
-    padding: 0.6rem 1.2rem;
-    border: none;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    font-family: inherit;
+    padding: 0.7rem 1.4rem;
     font-size: 1rem;
-    transition: background-color 0.2s ease, transform 0.1s ease;
   }
-  
-  .btn-blue {
-    background-color: #3498db;
-    color: white;
+  .card {
+    font-size: 1.1rem;
+    padding: 1rem;
   }
-  .btn-blue:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
-  }
-  
-  .btn-red {
-    background-color: #e74c3c;
-    color: white;
-  }
-  .btn-red:hover {
-    background-color: #c0392b;
-    transform: scale(1.05);
-  }
-  
-  .btn-yellow {
-    background-color: #f1c40f;
-    color: #2c3e50;
-  }
-  .btn-yellow:hover {
-    background-color: #f39c12;
-    transform: scale(1.05);
-  }
-  
-  .btn-green {
-    background-color: #27ae60;
-    color: white;
-  }
-  .btn-green:hover {
-    background-color: #1e8449;
-    transform: scale(1.05);
-  }
-  
-  .btn-blue-small {
-    background-color: #3498db;
-    color: white;
-    font-size: 0.85rem;
-    padding: 0.4rem 0.8rem;
-  }
-  .btn-blue-small:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
-  }
-  
-  @media (max-width: 600px) {
-    .title {
-      font-size: 1.5rem;
-    }
-    .subtitle {
-      font-size: 1rem;
-    }
-    .btn {
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-    }
-  }
-
-  @font-face {
-    font-family: 'GillSansUltraBold';
-    src: url('GillSansUltraBold.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'GillSansExtraBold';
-    src: url('GillSans-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-  }
-
-
-  .date-location {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    text-align: center;
-    width: 100%;
-  }
-  
+}
