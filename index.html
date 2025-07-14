@@ -15,15 +15,11 @@
   <meta name="twitter:title" content="¡Fiesta Toy Story de Elián – 20 jul 2025!" />
   <meta name="twitter:description" content="Confirma tu asistencia y únete a la aventura Toy Story en Los Faroles, Huamantla." />
   <meta name="twitter:image" content="https://tu-dominio.com/assets/images/preview-toystory.jpg" />
-  <!-- English comment: Friendly Toy Story font -->
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="src/style.css" />
-
-  <!-- Firebase SDK for Realtime Database (compat build) -->
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
   <script>
-    // Initialize Firebase using the *compat* API (simpler for plain script tags)
     const firebaseConfig = {
       apiKey: "AIzaSyBbcgELMN5fSpK88yO4dowwtPy6Oe8ETB0",
       authDomain: "cumpleyeye-4d699.firebaseapp.com",
@@ -37,54 +33,37 @@
   </script>
 </head>
 <body>
-
   <div class="invitation-container">
-    <!-- English comment: background image -->
     <img src="toy-4.png" alt="Invitación Toy Story" class="background-image" />
-
-    <!-- English comment: text card area -->
     <div class="card">
       <h1 class="title">
         <span class="half-red">¡Al infinito y</span>
         <span class="half-yellow">más allá!</span>
       </h1>
       <p class="subtitle">Elián Germán Hernández Angoa cumple 3 maravillosos años.</p>
-      <p>
-        Sus papás, abuelos y tíos, llenos de amor y gratitud con Dios y el universo,
-        te invitan a vivir una aventura temática <strong>Toy Story</strong> llena de risas,
-        juegos y mucha diversión.
-      </p>
+      <p>Sus papás, abuelos y tíos, llenos de amor y gratitud con Dios y el universo, te invitan a vivir una aventura temática <strong>Toy Story</strong> llena de risas, juegos y mucha diversión.</p>
       <p>Disfruta de una deliciosa mesa de dulces, pastel temático y diferentes bebidas refrescantes para todos los gustos.</p>
       <p>🎉 <strong>Fecha:</strong> 20 de julio de 2025</p>
       <p>📍 <strong>Lugar:</strong> Salón Los Faroles, Huamantla, Tlaxcala</p>
-
       <div class="buttons">
-        <!-- English comment: action buttons -->
         <button id="confirmBtn" class="btn btn-blue">Confirmar asistencia</button>
         <button id="calendarBtn" class="btn btn-yellow">Agregar a mi calendario</button>
         <button id="mapBtn" class="btn btn-red">Ver en Google Maps</button>
         <button id="whatsappBtn" class="btn btn-green">Compartir por WhatsApp</button>
       </div>
-
-      <!-- confirmation stats -->
       <div class="confirmation-stats">
         <p id="confirmCount">Asistencias confirmadas: 0</p>
       </div>
-
-      <!-- hidden audio element -->
       <audio id="bgMusic" loop>
         <source src="assets/audio/toy-story-loop.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-
       <div class="audio-controls">
-        <!-- English comment: audio control buttons -->
         <button id="playPauseBtn" class="btn btn-blue-small">Play / Pause música</button>
         <button id="muteBtn" class="btn btn-blue-small">Mute / Unmute</button>
       </div>
     </div>
   </div>
-
   <script src="src/renderer.js"></script>
 </body>
 </html>
