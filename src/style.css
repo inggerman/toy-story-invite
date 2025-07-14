@@ -146,12 +146,18 @@
 }
 @media (max-width: 500px) {
   .invitation-container {
-    transform: scale(1.6);
+    transform: scale(0.1);
   }
   .background-image {
     width: 140%;
+    height: 130;
     margin-left: -1%;
   }
+.card{
+      width: 130%;
+    height: 120;
+}
+
   .title {
     font-size: 2.4rem;
   }
