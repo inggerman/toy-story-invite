@@ -186,10 +186,10 @@
 
 @media (max-width: 400px) {
   .invitation-container {
-    transform: scale(1.6);
+    transform: scale(1.0);
   }
   .background-image {
-    width: 140%;
+    width: 120%;
     margin-left: -20%;
   }
   .title {
