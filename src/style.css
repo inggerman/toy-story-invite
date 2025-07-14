@@ -12,7 +12,6 @@
   width: 100%;
   height: auto;
   transition: width 0.3s ease;
-  transform: translateX(10%);
 }
 
 .card {
@@ -27,35 +26,194 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  left: -5%;
 }
 
-/* ... el resto sin cambios ... */
+.title {
+  font-size: 2rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+.half-red {
+  color: #ff0000;
+}
+.half-yellow {
+  color: #ffff33;
+  -webkit-text-stroke: 0.5px #3498db;
+  text-stroke: 0.5px #3498db;
+  text-shadow: -0.5px -0.5px 0 #3498db, 0.5px -0.5px 0 #3498db, -0.5px 0.5px 0 #3498db, 0.5px 0.5px 0 #3498db;
+}
 
-@media (max-width: 700px) {
-  .invitation-container {
-    transform: scale(1.6);
-    transform-origin: top center;
-  }
+.subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.confirmation-stats {
+  margin-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.confirmation-stats p {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin: 0;
+  text-align: center;
+}
+
+.audio-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-blue {
+  background-color: #3498db;
+  color: white;
+}
+.btn-blue:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.btn-red {
+  background-color: #e74c3c;
+  color: white;
+}
+.btn-red:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.btn-yellow {
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
+.btn-yellow:hover {
+  background-color: #f39c12;
+  transform: scale(1.05);
+}
+
+.btn-green {
+  background-color: #27ae60;
+  color: white;
+}
+.btn-green:hover {
+  background-color: #1e8449;
+  transform: scale(1.05);
+}
+
+.btn-blue-small {
+  background-color: #3498db;
+  color: white;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+}
+.btn-blue-small:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* === Móviles grandes === */
+@media (max-width: 768px) {
   .background-image {
-    width: 150%;
-    margin-left: -20%;
+    width: 120vw;
+    height: auto;
+    margin-left: -10vw;
   }
   .card {
+    transform: scale(0.95);
+    left: -5%;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .subtitle,
+  .card p {
+    font-size: 0.95rem;
+  }
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+  .confirmation-stats p {
+    font-size: 0.85rem;
+  }
+}
+
+/* === Móviles medianos === */
+@media (max-width: 600px) {
+  .background-image {
+    width: 130vw;
+    margin-left: -15vw;
+  }
+  .card {
+    transform: scale(0.9);
+    left: -8%;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .subtitle,
+  .card p {
+    font-size: 0.85rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.9rem;
+  }
+}
+
+/* === Móviles pequeños === */
+@media (max-width: 460px) {
+  .background-image {
+    width: 150vw;
+    margin-left: -25vw;
+  }
+  .card {
+    transform: scale(0.85);
     left: -10%;
   }
+  .title {
+    font-size: 1.2rem;
+  }
+  .subtitle,
+  .card p {
+    font-size: 0.75rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+    padding: 0.45rem 0.8rem;
+  }
 }
 
-@media (max-width: 500px) {
-  .invitation-container {
-    transform: scale(1.65);
-    transform-origin: top center;
-  }
+/* Extra pequeño */
+@media (max-width: 360px) {
   .background-image {
-    width: 160%;
-    margin-left: -30%;
+    width: 160vw;
+    margin-left: -30vw;
   }
   .card {
+    transform: scale(0.8);
     left: -12%;
   }
 }
